@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C98B3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical"
+        tools:context=".activities.CreateActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM Mahasiswa"/>
+
+        <TextView
+            android:id="@+id/nim_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Jenis Kelamin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Mahasiswa"/>
+
+        <TextView
+            android:id="@+id/nama_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Nama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prodi Mahasiswa"/>
+
+        <TextView
+            android:id="@+id/prodi_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Prodi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Mahasiswa"/>
+
+        <TextView
+            android:id="@+id/alamat_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Alamat"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"/>
+
+        <TextView
+            android:id="@+id/tanggallahir_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Tanggal Lahir"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamain"/>
+
+        <TextView
+            android:id="@+id/jenisKelamin_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginBottom="24dp"
+            android:textSize="18dp"
+            android:text="Jenis Kelamin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status Mahasiswa"/>
+
+        <TextView
+            android:id="@+id/status_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="Status"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

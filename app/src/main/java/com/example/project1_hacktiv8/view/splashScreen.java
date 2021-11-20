@@ -1,4 +1,4 @@
-package com.example.project1_hacktiv8;
+package com.example.project1_hacktiv8.view;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.Window;
 import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.project1_hacktiv8.R;
 
 public class splashScreen extends AppCompatActivity {
 

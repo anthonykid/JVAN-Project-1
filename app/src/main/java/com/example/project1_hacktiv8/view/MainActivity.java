@@ -2,9 +2,12 @@ package com.example.project1_hacktiv8.view;
 
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -52,14 +55,6 @@ public class MainActivity extends AppCompatActivity {
         db = new DatabaseHelper(this);
 
         notesList.addAll(db.getAllNotes());
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showNoteDialog(false, null, -1);
-            }
-        });
 
         mAdapter = new NotesAdapter(this, notesList);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
@@ -130,20 +125,6 @@ public class MainActivity extends AppCompatActivity {
         toggleEmptyNotes();
     }
 
-    /**
-     * Deleting note from SQLite and removing the
-     * item from the list by its position
-     */
-    private void deleteNote(int position) {
-        // deleting the note from db
-        db.deleteNote(notesList.get(position));
-
-        // removing the note from the list
-        notesList.remove(position);
-        mAdapter.notifyItemRemoved(position);
-
-        toggleEmptyNotes();
-    }
 
     /**
      * Opens dialog with Edit - Delete options
@@ -151,21 +132,7 @@ public class MainActivity extends AppCompatActivity {
      * Delete - 0
      */
     private void showActionsDialog(final int position) {
-        CharSequence colors[] = new CharSequence[]{"Edit", "Delete"};
-
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Choose option");
-        builder.setItems(colors, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                if (which == 0) {
-                    showNoteDialog(true, notesList.get(position), position);
-                } else {
-                    deleteNote(position);
-                }
-            }
-        });
-        builder.show();
+        showNoteDialog(true, notesList.get(position), position);
     }
 
 
@@ -240,5 +207,22 @@ public class MainActivity extends AppCompatActivity {
         } else {
             noNotesView.setVisibility(View.VISIBLE);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.addList:
+                showNoteDialog(false, null, -1);
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

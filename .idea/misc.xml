@@ -11,16 +11,19 @@
         <entry key="..\:/01Pelajaran/Tambahan/Android/Project1Hacktiv8/app/src/main/res/layout/activity_splash_screen.xml" value="0.1480978260869565" />
         <entry key="..\:/01Pelajaran/Tambahan/Android/Project1Hacktiv8/app/src/main/res/layout/activity_update.xml" value="0.22780797101449277" />
         <entry key="..\:/01Pelajaran/Tambahan/Android/Project1Hacktiv8/app/src/main/res/menu/menu_main.xml" value="0.2526041666666667" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/layout/activity_list_view.xml" value="0.12360688956433637" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/layout/activity_main.xml" value="0.12360688956433637" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/layout/content_main.xml" value="0.11231884057971014" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/layout/note_dialog.xml" value="0.11231884057971014" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/layout/note_list_row.xml" value="0.11231884057971014" />
-        <entry key="..\:/Android Studio/Hacktiv8/ASSIGNMENT/JVAN-Project-1/app/src/main/res/menu/menu_main.xml" value="0.22962962962962963" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_create.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_detail.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_list_view.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_main.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_splash_screen.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/activity_update.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/content_main.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/layout/note_list_row.xml" value="0.26875" />
+        <entry key="..\:/SMST 7/Praktek/JVAN-Project-1/app/src/main/res/menu/menu_main.xml" value="0.26875" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
